@@ -1,2 +1,3 @@
 # AI_Generalist
-Everything about AI Generalist. 
+
+*[Vibe Coding](#vibe_coding)
