@@ -2,6 +2,7 @@
 
 * [Playground](#playground)
 * [Vibe Coding](#vibe-coding)
+* [Prompt Engineering](#prompt-engineering)
 
 
 ## Playground
@@ -113,4 +114,82 @@
     * Separate concerns: presentational components, business logic, side effects
     * Use Biome for code formatting and linting
     * Configure Biome as a pre-commit hook
+
+## Prompt Engineering
+```
+Prompting is an iterative approach; you are not going to come up with a perfect prompt as per your desired output in the beginning.
+
+Always critically evaluate LLMs' output using a few guiding questions
+* Is the output accurate?
+* Is the output unbiased?
+* Does the output include sufficient information?
+* Is the output relevant to my project or task?
+* Is the output consistent if I use the same prompt multiple times?
+
+```
+  ### Pro Tips
+  * Give a clear, specific prompt with context
+  * Always think about how your output should look and be as specific as possible to achieve that.
+  * Ask it to include the sources
+  * After getting the desired output with the iterative prompts, prompt the AI to 
+``` Write a single prompt to get the output we finally have ``` 
+It will help us prompt next time and understand how it is expecting the prompt should be to get the desired output.
+  * In AI terminology, the word "Shot" is the same as the word "Example"
+    * Zero-shot prompting - prompt with no example.
+    * One-shot prompting -  prompt with one example.
+    * Few-shot prompting - prompt with more than one example.
+  * LLMs are good at pattern recognition, given examples to give it how your output should look like, it is very good at mimicking it.
+
+  ### Examples
+  * Give a good pizza place in Hamburg - decent prompt, but lacks context. 
+            to make it better, give it a context like 
+```
+I'm in the mood for Italian cuisine, particularly a good pizza in a laid-back, cosy environment. Give me a recommendation for Hamburg city
+```
+If you want to compare the prices in a tabular format, you may add
+```
+Create a table format and divide the restaurants by restaurant name, price point, description, and popular food."
+```
+* Another example is summarize - 
+```
+The following text is an email from a software vendor, summarise its main points in a bulleted form.
+```
+* Classify
+```
+Read these customer reviews and classify whether the sentiment for the review is positive, negativ,e or neutral
+```
+* Extract
+```
+Read the blog post below and extract all the references to items and clothing I can buy, and how much each item would cost. Create a bulleted list of just these items
+```
+* Translation
+```
+Translate our product descriptions from English to Spanish. Maintain the same structure and casual tone that is used in the English version in the Spanish translation
+```
+* Editing
+```
+Read the language of the following paragraph, so that it's easy for a general audience to understand it
+```
+* Problem Solving
+```
+We are running a community program to teach children garden skills. The program runs from June 1st to August 15th, and we want the children to be able to grow plants that will be ready to harvest by the time the program ends.
+First, identify a list of 10 plants that can be planted and grown in that period. Include sources that support the time to harvest for each plant.
+We want the children to grow these plants. These Be as different from each other as possible. So, next choose three plants from the list that will provide the children with this variety.
+```
+* Few Shot Prompting Example
+```
+Write a sentence description of a product. It should contain two adjectives that describe the product. Read the examples and write a description of a skateboard in the same style.
+Example 1: 
+Bicycle: Whether you're exploring city streets or forest paths, our sleek and durable bicycle has it all.
+Example 2: 
+Rollerblades: Roll into summer in style with our smooth and stylish roller blades
+```
+* **Chain of thought prompting** - divide a large task into smaller tasks
+Here’s an example of how to design a chain-of-thought prompt for a task at work. Consider an organization with thousands of employees. Each employee is assigned a unique purchasing code that can be used for buying supplies or equipment. First, a technical support specialist creates a unique purchasing code for each employee. To do so, the specialist uses a custom AI solution, approved for use with company and employee information, to help them create the purchasing code with the following chain-of-thought prompt:
+```
+ Our organization assigns purchasing codes by combining an employee’s department and ID number. All alphabetic characters are lowercase in the purchasing code. Review the examples and then answer the question that follows in the same manner. Explain the steps involved in determining each employee’s purchasing code.
+Question: Tiana B works in the Marketing department and has an ID number of 9283. What is Tiana B's purchasing code?
+
+Answer: The purchasing code for Tiana B is marketing9283. To determine this, first combine the department (Marketing) with the ID number (9283). This results in Marketing9283. Then, change all alphabetic characters to lowercase. This creates the purchasing code marketing9283.
+```
 
