@@ -41,8 +41,22 @@
     *  We need to build a PRD - Product Requirements Document.
    
   #### Framework
-  * know your framework
+  * Know and list the packages and frameworks AI to use. 
+  * If you do not know what to use, you can ask AI to suggest based on your requirements.
+  * example prompt is like - "could you help me come up with some React frameworks to implement, drag and drop into this application, and then implement it"
+  * three.js is a package for animation.
+#### Checkpoints
+  * Replit has a built-in version control
+  * Git - version control software, GitHub - a website that allows one to store their code, their repositories on the cloud.
+
+#### Debugging
+  * learn the art of debugging
+#### Context  
+  * Provide as much information as possible to AI to build better and debug better, such as Detailed Prompt, PRD, Provide Mock-Ups, Provide Additional Data(examples, extra data, details about app, your environment, your preferences, Errors).
+  * the more details we provide to the AI, the better results we get from it.
   * 
+
+
   
 
 
