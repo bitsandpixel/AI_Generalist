@@ -3,6 +3,7 @@
 * [Playground](#playground)
 * [Vibe Coding](#vibe-coding)
 * [Prompt Engineering](#prompt-engineering)
+* [AI Agents](#ai-agents)
 
 
 ## Playground
@@ -13,7 +14,7 @@
   ### Referenced URLs
   * https://www.youtube.com/watch?v=iLCDSY2XX7E
   * https://docs.google.com/document/d/1cAq3qjgfTISPHP4p_LQALMotCNqh6Y1SBl2GzmD9OmE/
-  * 
+  * https://youtu.be/ASABxNenD_U?si=COZ7aKJVcN4YxggU
 ## Vibe Coding
 
   ### Step-Wise Learning
@@ -193,3 +194,25 @@ Question: Tiana B works in the Marketing department and has an ID number of 9283
 Answer: The purchasing code for Tiana B is marketing9283. To determine this, first combine the department (Marketing) with the ID number (9283). This results in Marketing9283. Then, change all alphabetic characters to lowercase. This creates the purchasing code marketing9283.
 ```
 
+## AI Agents
+```
+An AI Agent is a software program that can act autonomously to achieve specific goals, making decisions, and taking actions based on its environment and data.
+```
+* **As per OpenAI, six components make up an AI Agent.**
+  * Models - An AI model itself (provides intelligence)
+  * Tools - to interact and access different information (Enable Action)
+  * Knowledge and Memory - access to a specific database and previous memory (informs decisions)
+  * Audio and Speech - ability to interact (Enables natural interaction)
+  * Guardrails - a system to keep the AI Agent in check (Ensures Safety)
+  * Orchestration - processes that allow you to deploy the AI Agent in specific environments, monitor them, and also improve them over time. (Manages them all).
+* **Examples of AI Agents**
+  * Virtual Assistants - Siri, Alexa, Google Assistant
+  * Chatbots - on websites
+  * Self-driving cars - decide where to turn or stop all by themselves.
+  * Recommendation Systems - like on YouTube or Netflix, which suggest shows or videos you might like.
+* **Tools to develop AI Agent**
+  * n8n is good for beginner friendly, general usecase
+  * Gumloop is good for enterprise usecases.
+  * TODO: if you know how to code, checkout OpenAI Agent's SDK
+  * Google's ADK (Agent Development Kit) is free.
+  * Claude Code SDK is specific for coding agents.   
